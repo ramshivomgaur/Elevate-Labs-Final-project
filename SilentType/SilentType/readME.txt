@@ -1,8 +1,8 @@
 ===========================================================
-        Encrypted Keylogger with Decryption Viewer
+                SilentType with Decryption Viewer
 ===========================================================
 
-Author: Prashant Mall  
+Author: Ram Shiv Om Gaur 
 Language: Python 
 Encryption: Fernet (symmetric encryption)  
 UI: Tkinter  
@@ -12,22 +12,22 @@ Dependencies: pynput, cryptography, tkinter
 📌 Project Overview
 -----------------------------------------------------------
 
-This project is a secure keylogger tool built for educational and research purposes. 
+This project is a secure SilentType tool built for educational and research purposes. 
 It captures each keystroke on a system, encrypts it in real-time using a symmetric 
 encryption key, and stores it with a timestamp in a log file. A GUI viewer application 
-is also included to decrypt and visualize these logs.
+is also included to decrypt and visualise these logs.
 
 All sensitive logs are encrypted using the `cryptography.fernet` module to ensure data
-confidentiality even if the logs are accessed directly.
+confidentiality, even if the logs are accessed directly.
 
 -----------------------------------------------------------
 📦 Project Structure
 -----------------------------------------------------------
 
-|-- keylogger.py         → Starts keylogging and logs encrypted keys
+|--SilentType.py         → Starts keylogging and logs encrypted keys
 |-- encrypt_util.py      → Handles encryption and decryption logic
 |-- keygeneration.py     → Generates Fernet encryption key
-|-- decrypt.py           → CLI tool to read and decrypt log file
+|-- decrypt.py           → CLI tool to read and decrypt a log file
 |-- gui_log_viewer.py    → GUI viewer to decrypt and display keystrokes
 |-- config.json          → Stores the encryption key (used by logger/viewer)
 |-- logs/
@@ -46,16 +46,16 @@ confidentiality even if the logs are accessed directly.
        "encryption_key": "YOUR_GENERATED_KEY"
    }
 
-3. Start the keylogger:
+3. Start the SilentType:
    Run `main.py` to begin logging keystrokes. Logs will be stored in `logs/keystrokes.log`.
 
-4. View logs using GUI:
+4. View logs using the GUI:
    Run `logViewerGUI_InDecryptedFormat.py` to open a simple viewer:
    - Search and filter logs
    - Export logs to .txt or .csv
    - Decrypt logs in real-time
 
-5. (Optional) Use `decrypt.py` to print logs in terminal.
+5. (Optional) Use `decrypt.py` to print logs in the terminal.
 
 -----------------------------------------------------------
 🔐 Security Note
@@ -64,5 +64,5 @@ confidentiality even if the logs are accessed directly.
 This project is intended for learning and ethical use ONLY.
 
 DO NOT deploy or distribute this without clear permission from the system owner.
-Unauthorized use may be illegal and unethical.
+Unauthorised use may be illegal and unethical.
 
